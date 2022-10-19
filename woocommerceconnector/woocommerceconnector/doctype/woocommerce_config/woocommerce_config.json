@@ -74,7 +74,7 @@
    "default": "1",
    "fieldname": "enable_woocommerce",
    "fieldtype": "Check",
-   "label": "Enable woocommerce"
+   "label": "Enable WooCommerce"
   },
   {
    "default": "0",
@@ -163,7 +163,7 @@
    "default": "0",
    "fieldname": "if_not_exists_create_item_to_woocommerce",
    "fieldtype": "Check",
-   "label": "If item does not exist, create item in woocommerce"
+   "label": "If item does not exist, create item in WooCommerce"
   },
   {
    "default": "0",
@@ -215,7 +215,7 @@
   {
    "fieldname": "fee_account",
    "fieldtype": "Link",
-   "label": "Woocommerce Fee Account",
+   "label": "WooCommerce Fee Account",
    "options": "Account",
    "reqd": 1
   },
@@ -257,7 +257,7 @@
   {
    "fieldname": "weight_unit",
    "fieldtype": "Link",
-   "label": "Woocommerce Weight unit",
+   "label": "WooCommerce Weight unit",
    "options": "UOM"
   },
   {
@@ -267,7 +267,7 @@
   {
    "fieldname": "dimensions_unit",
    "fieldtype": "Link",
-   "label": "Woocommerce Dimensions unit",
+   "label": "WooCommerce Dimensions unit",
    "options": "UOM"
   },
   {
@@ -282,7 +282,7 @@
   {
    "fieldname": "taxes",
    "fieldtype": "Table",
-   "label": "woocommerce Tax Account",
+   "label": "WooCommerce Tax Account",
    "options": "woocommerce Tax Account"
   },
   {
@@ -313,7 +313,7 @@
    "default": "0",
    "fieldname": "sync_delivery_note",
    "fieldtype": "Check",
-   "label": "Import Delivery Notes from woocommerce on Shipment"
+   "label": "Import Delivery Notes from WooCommerce on Shipment"
   },
   {
    "depends_on": "eval:doc.sync_delivery_note==1",
@@ -325,7 +325,7 @@
    "default": "0",
    "fieldname": "sync_sales_invoice",
    "fieldtype": "Check",
-   "label": "Import Sales Invoice from woocommerce if Payment is marked"
+   "label": "Import Sales Invoice from WooCommerce if Payment is marked"
   },
   {
    "depends_on": "eval:doc.sync_sales_invoice==1",
@@ -368,7 +368,7 @@
    "fieldname": "item_code_based_on",
    "fieldtype": "Select",
    "label": "Item code based on..",
-   "options": "WooCommerce ID\nWooCommerce ID + Name\nWooCommerce Name\nRandom Hash\nNaming Series",
+   "options": "WooCommerce ID\nWooCommerce ID + Name\nWooCommerce SKU\nWooCommerce Name\nRandom Hash\nNaming Series",
    "reqd": 1
   },
   {

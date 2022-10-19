@@ -130,6 +130,8 @@ def get_item_code(woocommerce_item, woocommerce_settings):
         item_code = str(woocommerce_item.get("id"))
     elif woocommerce_settings.item_code_based_on == 'WooCommerce ID + Name':
         item_code = str(woocommerce_item.get("id")) + str(woocommerce_item.get("name"))
+    elif woocommerce_settings.item_code_based_on == 'WooCommerce SKU':
+        item_code = str(woocommerce_item.get("sku"))
     elif woocommerce_settings.item_code_based_on == 'WooCommerce Name':
         item_code = str(woocommerce_item.get("name"))
     elif woocommerce_settings.item_code_based_on == 'Random Hash':
